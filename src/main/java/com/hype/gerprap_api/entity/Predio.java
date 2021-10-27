@@ -25,6 +25,8 @@ import lombok.Setter;
 @Table(name = "predio")
 public class Predio {
 
+    //NO-ID-CONSTRUCTOR
+
     @Id
     @Getter
     @Setter

@@ -22,6 +22,8 @@ import lombok.Setter;
 @Table(name = "apartamento")
 public class Apartamento {
 
+    //NO-ID-CONSTRUCTOR
+
     @Id
     @Getter
     @Setter
