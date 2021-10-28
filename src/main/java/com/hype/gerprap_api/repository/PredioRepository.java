@@ -13,5 +13,4 @@ public interface PredioRepository extends JpaRepository<Predio, Long> {
 
     Optional<Predio> findByNome(String nome);
 
-
 }

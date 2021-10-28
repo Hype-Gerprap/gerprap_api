@@ -31,7 +31,7 @@ public class PredioController {
     }
 
     // find predio (podem haver muitos "predios" com o mesmo "nome") by nome
-    @GetMapping("/predio-nome={nome}")
+    @GetMapping("/list-predios-nome={nome}")
     public List<Predio> selectByName(@PathVariable(value = "nome") String nome) {
         return predioRepository.findAllByNome(nome);
     }
@@ -65,6 +65,6 @@ public class PredioController {
     @PutMapping("/update-predio={id}")
     public Predio updatePredio(@RequestBody Predio predio){
 				return predioRepository.save(predio);
-		}
+	}
 
 }
