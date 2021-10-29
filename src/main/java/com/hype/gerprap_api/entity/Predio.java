@@ -2,6 +2,7 @@ package com.hype.gerprap_api.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -64,7 +65,7 @@ public class Predio {
     @Column(name = "estado", nullable = false, length = 25)
     private String estado;
 
-    @OneToMany(mappedBy = "predio") //using id_predio unidirectional
+    @OneToMany(mappedBy = "predio", cascade = CascadeType.REMOVE) //using id_predio unidirectional
     private List<Apartamento> apartamentos;
 
     @Override
