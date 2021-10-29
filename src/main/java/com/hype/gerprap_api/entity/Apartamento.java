@@ -25,7 +25,15 @@ import lombok.ToString;
 public class Apartamento {
 
     //NO-ID-CONSTRUCTOR
-
+    public Apartamento(String codigo, Integer qtdQuartos, Integer qtdBanheiros, Integer qtdSuites, Double areaApartamento, Predio predio){
+        this.codigo = codigo;
+        this.qtdQuartos = qtdQuartos;
+        this.qtdBanheiros = qtdBanheiros;
+        this.qtdSuites = qtdSuites;
+        this.areaApartamento = areaApartamento;
+        this.predio = predio;
+    }
+    
     @Id
     @Getter
     @Setter
@@ -63,6 +71,20 @@ public class Apartamento {
     @JoinColumn(name = "id_predio", nullable = false)
     private Predio predio;
     
+
+    @Override
+    public String toString() {
+        return "{" +
+            " id='" + getId() + "'" +
+            ", codigo='" + getCodigo() + "'" +
+            ", qtdQuartos='" + getQtdQuartos() + "'" +
+            ", qtdBanheiros='" + getQtdBanheiros() + "'" +
+            ", qtdSuites='" + getQtdSuites() + "'" +
+            ", areaApartamento='" + getAreaApartamento() + "'" +
+            ", predio='" + getPredio() + "'" +
+            "}";
+    }
+
     
 
 }
