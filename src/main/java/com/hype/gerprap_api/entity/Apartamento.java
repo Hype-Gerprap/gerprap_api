@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -12,11 +14,13 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity()
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
+@ToString
 @Table(name = "apartamento")
 public class Apartamento {
 
@@ -52,6 +56,12 @@ public class Apartamento {
     @Setter
     @Column(name = "area_apartamento", nullable = true, length = 1)
     private Double areaApartamento; 
+
+    @Getter
+    @Setter
+    @ManyToOne
+    @JoinColumn(name = "id_predio", nullable = false)
+    private Predio predio;
     
     
 

@@ -1,10 +1,13 @@
 package com.hype.gerprap_api.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -53,6 +56,9 @@ public class Predio {
     @Setter
     @Column(name = "estado", nullable = false, length = 25)
     private String estado;
+
+    @OneToMany(mappedBy = "predio") //using id_predio unidirectional
+    private List<Apartamento> apartamentos;
 
 
 }
