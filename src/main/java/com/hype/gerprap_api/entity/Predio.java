@@ -24,13 +24,12 @@ import lombok.Setter;
 public class Predio {
 
     //NO-ID-CONSTRUCTOR
-    public Predio(String nome, String sigla, String endereco, String cidade, String estado, List<Apartamento> apartamentos) {
+    public Predio(String nome, String sigla, String endereco, String cidade, String estado) {
         this.nome = nome;
         this.sigla = sigla;
         this.endereco = endereco;
         this.cidade = cidade;
         this.estado = estado;
-        this.apartamentos = apartamentos;
     }
 
     @Id
@@ -65,8 +64,6 @@ public class Predio {
     @Column(name = "estado", nullable = false, length = 25)
     private String estado;
 
-    @Getter
-    @Setter
     @OneToMany(mappedBy = "predio") //using id_predio unidirectional
     private List<Apartamento> apartamentos;
 
@@ -79,7 +76,6 @@ public class Predio {
             ", endereco='" + getEndereco() + "'" +
             ", cidade='" + getCidade() + "'" +
             ", estado='" + getEstado() + "'" +
-            ", apartamentos='" + getApartamentos() + "'" +
             "}";
     }
 
