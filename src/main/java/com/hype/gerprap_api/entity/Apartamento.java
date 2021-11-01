@@ -42,33 +42,33 @@ public class Apartamento {
     
     @Getter
     @Setter
-    @Column(name = "codigo", nullable = false, length = 4)
+    @Column(name = "codigo", nullable = false, length = 4, unique = true)
     private String codigo;
     
     @Getter
     @Setter
-    @Column(name = "qtd_quartos", nullable = false, length = 1)
+    @Column(name = "qtd_quartos", nullable = false, length = 1, unique = false)
     private Integer qtdQuartos; 
     
     @Getter
     @Setter
-    @Column(name = "qtd_banheiros", nullable = true, length = 1)
+    @Column(name = "qtd_banheiros", nullable = true, length = 1, unique = false)
     private Integer qtdBanheiros; 
 
     @Getter
     @Setter
-    @Column(name = "qtd_suites", nullable = true, length = 1)
+    @Column(name = "qtd_suites", nullable = true, length = 1, unique = false)
     private Integer qtdSuites; 
     
     @Getter
     @Setter
-    @Column(name = "area_apartamento", nullable = true, length = 1)
+    @Column(name = "area_apartamento", nullable = true, length = 8, unique = false)
     private Double areaApartamento; 
 
     @Getter
     @Setter
     @ManyToOne
-    @JoinColumn(name = "id_predio", nullable = false)
+    @JoinColumn(name = "id_predio", nullable = false, unique = false)
     private Predio predio;
     
 

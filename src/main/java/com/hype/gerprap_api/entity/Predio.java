@@ -39,30 +39,29 @@ public class Predio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    
     @Getter
     @Setter
-    @Column(name = "nome", nullable = false, length = 65)
+    @Column(name = "nome", nullable = false, length = 65, unique = true)
     private String nome;
     
     @Getter
     @Setter
-    @Column(name = "sigla", nullable = false, length = 5)
+    @Column(name = "sigla", nullable = false, length = 5, unique = false)
     private String sigla; //cond. ed. (condominio, edificio)
     
     @Getter
     @Setter
-    @Column(name = "endereco", nullable = false, length = 65)
+    @Column(name = "endereco", nullable = false, length = 65, unique = false)
     private String endereco;
 
     @Getter
     @Setter
-    @Column(name = "cidade", nullable = false, length = 35)
+    @Column(name = "cidade", nullable = false, length = 35, unique = false)
     private String cidade;
     
     @Getter
     @Setter
-    @Column(name = "estado", nullable = false, length = 25)
+    @Column(name = "estado", nullable = false, length = 25, unique = false)
     private String estado;
 
     @OneToMany(mappedBy = "predio", cascade = CascadeType.REMOVE) //using id_predio unidirectional
