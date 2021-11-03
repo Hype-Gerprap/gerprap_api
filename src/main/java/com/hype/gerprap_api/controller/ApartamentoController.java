@@ -45,13 +45,12 @@ public class ApartamentoController {
     // insert new apartamento
     @PostMapping("/insert-apartamento")
     public Apartamento saveApartamento(@RequestBody Apartamento apartamento){
-				Optional<Apartamento> findbyCodigo = apartamentoRepository.findByCodigo(apartamento.getCodigo());
+				Optional<Apartamento> findByCodigo = apartamentoRepository.findByCodigo(apartamento.getCodigo());
 
-				if(findbyCodigo.isEmpty() == true){
+				if(findByCodigo.isEmpty()){
 					return apartamentoRepository.save(apartamento);
 				}else{
-					Apartamento apartamentoNull = new Apartamento();
-					return apartamentoNull;
+					return new Apartamento();
 				}
     }
 

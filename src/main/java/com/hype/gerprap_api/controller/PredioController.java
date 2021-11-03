@@ -45,13 +45,12 @@ public class PredioController {
     // insert new predio
     @PostMapping("/insert-predio")
     public Predio savePredio(@RequestBody Predio predio){
-				Optional<Predio> findbyNome = predioRepository.findByNome(predio.getNome());
+				Optional<Predio> findByNome = predioRepository.findByNome(predio.getNome());
 
-				if(findbyNome.isEmpty() == true){
+				if(findByNome.isEmpty() == true){
 					return predioRepository.save(predio);
 				}else{
-					Predio predioNull = new Predio();
-					return predioNull;
+					return new Predio();
 				}
     }
 
