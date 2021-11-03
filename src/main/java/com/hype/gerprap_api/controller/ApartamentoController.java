@@ -47,7 +47,7 @@ public class ApartamentoController {
     public Apartamento saveApartamento(@RequestBody Apartamento apartamento){
 				Optional<Apartamento> findByCodigo = apartamentoRepository.findByCodigo(apartamento.getCodigo());
 
-				if(findByCodigo.isEmpty()){
+				if(!findByCodigo.isPresent()){
 					return apartamentoRepository.save(apartamento);
 				}else{
 					return new Apartamento();

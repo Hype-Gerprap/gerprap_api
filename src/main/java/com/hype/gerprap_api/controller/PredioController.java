@@ -47,7 +47,7 @@ public class PredioController {
     public Predio savePredio(@RequestBody Predio predio){
 				Optional<Predio> findByNome = predioRepository.findByNome(predio.getNome());
 
-				if(findByNome.isEmpty()){
+				if(!findByNome.isPresent()){
 					return predioRepository.save(predio);
 				}else{
 					return new Predio();
