@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hype.gerprap_api.GerprapApiApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-03T18:48:41" hostname="DESKTOP-ANDRE" time="0.264">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.hype.gerprap_api.GerprapApiApplicationTests" time="0.264"/>
+  <system-out><![CDATA[15:48:33.842 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:48:33.860 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:48:33.917 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hype.gerprap_api.GerprapApiApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:48:33.932 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hype.gerprap_api.GerprapApiApplicationTests], using SpringBootContextLoader
+15:48:33.937 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hype.gerprap_api.GerprapApiApplicationTests]: class path resource [com/hype/gerprap_api/GerprapApiApplicationTests-context.xml] does not exist
+15:48:33.938 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hype.gerprap_api.GerprapApiApplicationTests]: class path resource [com/hype/gerprap_api/GerprapApiApplicationTestsContext.groovy] does not exist
+15:48:33.938 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hype.gerprap_api.GerprapApiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:48:33.939 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hype.gerprap_api.GerprapApiApplicationTests]: GerprapApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:48:34.003 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hype.gerprap_api.GerprapApiApplicationTests]
+15:48:34.084 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\2019102420\Desktop\repos\vscode_repos\hype-gerprap\gerprap_api\build\classes\java\main\com\hype\gerprap_api\GerprapApiApplication.class]
+15:48:34.086 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hype.gerprap_api.GerprapApiApplication for test class com.hype.gerprap_api.GerprapApiApplicationTests
+15:48:34.201 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hype.gerprap_api.GerprapApiApplicationTests]: using defaults.
+15:48:34.202 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:48:34.223 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2364305a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@470a696f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1bc715b8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@292d1c71, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b491fee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3f1c5af9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c55f277, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5ddabb18, org.springframework.test.context.event.EventPublishingTestExecutionListener@3e8f7922, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@63192798, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@50eca7c6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@58e6d4b8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1de5f0ef, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@376a312c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28d6290]
+15:48:34.228 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2cb3d0f7 testClass = GerprapApiApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4e517165 testClass = GerprapApiApplicationTests, locations = '{}', classes = '{class com.hype.gerprap_api.GerprapApiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1c33c17b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49ff7d8c, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7fb95505, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3f9342d4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3ad2e17, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@19d481b], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+15:48:34.273 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2021-11-03 15:48:34.701  INFO 11908 --- [    Test worker] c.h.g.GerprapApiApplicationTests         : Starting GerprapApiApplicationTests using Java 14.0.2 on DESKTOP-ANDRE with PID 11908 (started by 2019102420 in C:\Users\2019102420\Desktop\repos\vscode_repos\hype-gerprap\gerprap_api)
+2021-11-03 15:48:34.706  INFO 11908 --- [    Test worker] c.h.g.GerprapApiApplicationTests         : No active profile set, falling back to default profiles: default
+2021-11-03 15:48:35.778  INFO 11908 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 15:48:35.852  INFO 11908 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2021-11-03 15:48:36.712  INFO 11908 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 15:48:36.811  INFO 11908 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-03 15:48:37.045  INFO 11908 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-03 15:48:37.208  INFO 11908 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-03 15:48:37.442  INFO 11908 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-03 15:48:37.465  INFO 11908 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: 
+    
+    drop table if exists apartamento
+Hibernate: 
+    
+    drop table if exists predio
+Hibernate: 
+    
+    create table apartamento (
+       id bigint not null auto_increment,
+        area_apartamento double precision,
+        codigo varchar(4) not null,
+        qtd_banheiros integer,
+        qtd_quartos integer not null,
+        qtd_suites integer,
+        id_predio bigint not null,
+        primary key (id)
+    ) engine=MyISAM
+Hibernate: 
+    
+    create table predio (
+       id bigint not null auto_increment,
+        cidade varchar(35) not null,
+        endereco varchar(65) not null,
+        estado varchar(25) not null,
+        nome varchar(65) not null,
+        sigla varchar(5) not null,
+        primary key (id)
+    ) engine=MyISAM
+Hibernate: 
+    
+    alter table apartamento 
+       add constraint UK_m5v5vh073nes4ndrkibfo9wto unique (codigo)
+Hibernate: 
+    
+    alter table predio 
+       add constraint UK_ktu99kuxlwligmahkl2f5u01i unique (nome)
+Hibernate: 
+    
+    alter table apartamento 
+       add constraint FKayn4m64ryngqdvvv4rvyf8yvk 
+       foreign key (id_predio) 
+       references predio (id)
+2021-11-03 15:48:38.502  INFO 11908 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 15:48:38.512  INFO 11908 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 15:48:39.621  WARN 11908 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 15:48:41.738  INFO 11908 --- [    Test worker] c.h.g.GerprapApiApplicationTests         : Started GerprapApiApplicationTests in 7.453 seconds (JVM running for 8.93)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
